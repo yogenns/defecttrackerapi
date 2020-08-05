@@ -19,7 +19,8 @@ public class DefectData {
 
     @ManyToOne
     private UserData reportedBy;
-    private String assignedTo;
+    @ManyToOne
+    private UserData assignedTo;
     private String description;
     private String status;
     private Date dateCreated;
@@ -72,11 +73,11 @@ public class DefectData {
         this.reportedBy = reportedBy;
     }
 
-    public String getAssignedTo() {
+    public UserData getAssignedTo() {
         return assignedTo;
     }
 
-    public void setAssignedTo(String assignedTo) {
+    public void setAssignedTo(UserData assignedTo) {
         this.assignedTo = assignedTo;
     }
 
