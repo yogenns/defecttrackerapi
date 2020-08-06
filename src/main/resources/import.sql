@@ -1,0 +1,1 @@
+insert into userdb (id,username,password) values (1,'admin','admin');
